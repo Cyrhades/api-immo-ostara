@@ -18,4 +18,5 @@ router.delete('/:id', controller.remove);
 router.route('/').all((req,res) => { res.status(405).send(); });
 router.route('/:id').all((req,res) => { res.status(405).send(); });
  
+// Export du router
 module.exports = router;

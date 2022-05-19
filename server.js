@@ -7,8 +7,10 @@ require('dotenv').config()
 //--------------------------------------------------------------------
 const apiRoutes = require('./api/routes.js');
 const apiKeyControl = require('./src/middlewares/apiKeyControl.js');
+
 app.use('/api', apiKeyControl, apiRoutes);
  
+
 //--------------------------------------------------------------------
 //     Ecoute du serveur HTTP
 //--------------------------------------------------------------------
