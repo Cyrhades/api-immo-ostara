@@ -14,6 +14,6 @@ app.use('/api', apiKeyControl, apiRoutes);
 //--------------------------------------------------------------------
 //     Ecoute du serveur HTTP
 //--------------------------------------------------------------------
-app.listen(process.env.PORT_HTTP, () => {
-    console.log(`Le serveur est démarré : http://localhost:${process.env.PORT_HTTP}` );
+app.listen(process.env.PORT, () => {
+    console.log(`Le serveur est démarré : http://localhost:${process.env.PORT}` );
 });
